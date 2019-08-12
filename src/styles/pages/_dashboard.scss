@@ -1,0 +1,30 @@
+#dashboard-container {
+	width: 100%;
+	background-image: url(../assets/bitmap.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	.dashboard-container-mask {
+		color: white;
+		width: 100%;
+		height: inherit;
+		background-color: rgba(241, 106, 112, 0.7);
+		position: relative;
+		.dashboard-text-container {
+			position: absolute;
+			top: 25%;
+			left: 10%;
+			font-size: 2rem;
+			h1 {
+				color: white;
+				margin: 0;
+				font-size: 5rem;
+				text-transform: uppercase;
+			}
+			.dashboard-text-quote-source {
+				font-size: 1.5rem;
+				color: yellow;
+			}
+		}
+	}
+}
