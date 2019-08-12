@@ -5,33 +5,33 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const dotenv = require('dotenv').config();
+const dotenv = require("dotenv").config();
 
 function serializePublicUrl(url) {
-	if (url.endsWith('/')) {
-		url = url.substring(0, url.length - 1);
+	if (url.endsWith("/")) {
+		url = url.substring(0, url.length-1);
 	}
-	if (!url.startsWith('/')) {
+	if (!url.startsWith("/")) {
 		url = `/${url}`;
 	}
 	return url;
 }
 
 function serializeApiUrl(url) {
-	if (url.endsWith('/')) {
-		url = url.substring(0, url.length - 1);
+	if (url.endsWith("/")) {
+		url = url.substring(0, url.length-1);
 	}
 	return url;
 }
 
 module.exports = (env, argv) => {
-	const PUBLIC_URL = serializePublicUrl(process.env.PUBLIC_URL || '');
-	const API_URL = serializeApiUrl(process.env.API_URL || '');
+	const PUBLIC_URL = serializePublicUrl(process.env.PUBLIC_URL || "");
+	const API_URL = serializeApiUrl(process.env.API_URL || "");
 
 	dotenv.parsed = {
 		...dotenv.parsed,
 		API_URL,
-		PUBLIC_URL,
+		PUBLIC_URL
 	};
 
 	return {
@@ -39,7 +39,7 @@ module.exports = (env, argv) => {
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: '[name]-[contenthash:8].js',
-			publicPath: PUBLIC_URL,
+			publicPath: PUBLIC_URL
 		},
 		resolve: {
 			alias: {
@@ -67,14 +67,16 @@ module.exports = (env, argv) => {
 				/(en-gb|id)/,
 			),
 			new webpack.DefinePlugin({
-				'process.env': JSON.stringify(dotenv.parsed),
-			}),
+				'process.env': JSON.stringify(dotenv.parsed)
+			})
 		],
 		module: {
 			rules: [
 				{
 					test: /\.(js|jsx)$/,
-					exclude: [/node_modules/],
+					exclude: [
+						/node_modules/,
+					],
 					use: {
 						loader: 'babel-loader',
 						options: {

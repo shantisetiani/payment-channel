@@ -4,17 +4,17 @@
 
 ## How to Use
 
--   Clone this repository `git clone https://github.com/payfazz/front-end-skeleton`
--   Change origin url to your own repository with `git remote` command
--   Install dependencies with `npm install` or `yarn install`
--   Copy `.env.example` to `.env` and adjust the value with your environment
--   Serve project : `npm start`
--   Have fun!
+- Clone this repository `git clone https://github.com/payfazz/front-end-skeleton`
+- Change origin url to your own repository with `git remote` command
+- Install dependencies with `npm install` or `yarn install`
+- Copy `.env.example` to `.env` and adjust the value with your environment
+- Serve project : `npm start`
+- Have fun!
 
 ## How to Deploy
 
--   Prepare your .env with real value.
-    **IMPORTANT : Dont forget to adjust your PUBLIC_URL ENV!**
+- Prepare your .env with real value.
+  **IMPORTANT : Dont forget to adjust your PUBLIC_URL ENV!**
 
 We assumes your application is hosted at the serving web server's root. This value doesn't includes the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide.
 
@@ -24,9 +24,9 @@ https://payfazz.com, `PUBLIC_URL` = `/`
 
 https://payfazz.com/dev-vm/abc/skeleton-dash, `PUBLIC_URL` = `/dev-vm/abc/skeleton-dash`
 
--   Run `npm run build` and wait until the bundle process is completed.
--   Copy `dist/` folder contents and serve it with your preffered web server like `nginx`.
--   Done
+- Run `npm run build` and wait until the bundle process is completed.
+- Copy `dist/` folder contents and serve it with your preffered web server like `nginx`.
+- Done
 
 ## Project Structure
 
@@ -114,8 +114,8 @@ Variable name must be in **uppercase** format.
 You can intercept **requests** or **responses** before they are handled by then or catch.
 Currently, there are 2 interceptor provided by us.
 
--   Pre Request Interceptor : Append bearer token to request header.
--   Unauthorized Interceptor : Handle auth error response status like 401/403, redirect to login page.
+- Pre Request Interceptor : Append bearer token to request header.
+- Unauthorized Interceptor : Handle auth error response status like 401/403, redirect to login page.
 
 #### 5. Middlewares
 
@@ -157,10 +157,10 @@ A helper method is a method that helps another method to perform it's task. Thes
 
 ## Resources
 
--   [ReactJS Documentation](https://reactjs.org/docs/getting-started.html)
--   [Axios Documentation](https://github.com/axios/axios)
--   [Ant Design of React](https://ant.design/docs/react/introduce)
--   [Moment.js](https://momentjs.com/docs/)
+- [ReactJS Documentation](https://reactjs.org/docs/getting-started.html)
+- [Axios Documentation](https://github.com/axios/axios)
+- [Ant Design of React](https://ant.design/docs/react/introduce)
+- [Moment.js](https://momentjs.com/docs/)
 
 ## Contributing
 

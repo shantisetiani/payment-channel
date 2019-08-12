@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { hasAccess } from '../../utils/roles';
+import { hasAccess } from '../../../utils/roles';
 
 const Role = ({ roleItem, children, classname, style }) => {
 	const visible = hasAccess(roleItem);

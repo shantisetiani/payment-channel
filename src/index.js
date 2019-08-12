@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
-import './styles/index.scss';
-import 'antd/dist/antd.css';
-import { ApplicationRouting } from './routes';
+import "./styles/index.scss";
+import "antd/dist/antd.css";
+import { ApplicationRouting } from "./routes";
 
-ReactDOM.render(ApplicationRouting, document.getElementById('root'));
+ReactDOM.render(ApplicationRouting, document.getElementById("root"));

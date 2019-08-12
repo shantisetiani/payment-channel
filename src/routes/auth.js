@@ -1,5 +1,5 @@
 import { MENU } from '../config/menu';
-import Login from '../pages/users/login';
+import Login from '../modules/users/login';
 
 export const AUTH_ROUTES = [
 	{ path: MENU.HOMEPAGE, component: Login },
