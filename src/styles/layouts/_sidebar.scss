@@ -25,16 +25,13 @@
 	}
 	.ant-menu-item:hover,
 	.ant-menu-item-active,
+	.ant-menu-item.active,
 	.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
 	.ant-menu-submenu-active,
 	.ant-menu-submenu-title:hover,
 	.ant-menu-item > a:hover,
 	.ant-menu-item-selected > a,
 	.ant-menu-item-selected > a:hover {
-		border-left: 5px solid $primary-color;
-		color: $primary-color;
-	}
-	.ant-menu-item.active {
 		border-left: 5px solid $primary-color;
 		color: $primary-color;
 	}

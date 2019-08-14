@@ -1,0 +1,110 @@
+#profile-container {
+	width: 100%;
+
+	.ant-breadcrumb {
+		background: $white;
+		padding: 18px 0 18px 30px;
+		margin-top: 1px;
+		margin-bottom: 40px;
+
+		.anticon {
+			color: $light-black;
+			font-size: 24px;
+			margin-right: 20px;
+		}
+	}
+
+	.ant-layout-sider {
+		margin-left: 30px;
+		font-size: 16px;
+		height: 320px;
+
+		.sider__account {
+			padding: 20px;
+			font-weight: 500;
+			border-bottom: 1px solid #e0e0e0;
+
+			.anticon {
+				float: right;
+				font-size: 24px;
+			}
+		}
+
+		.ant-menu-item,
+		.ant-menu-submenu-title {
+			border-left: 5px solid transparent;
+		}
+		.ant-menu-item:hover,
+		.ant-menu-item-active,
+		.ant-menu-item.active,
+		.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+		.ant-menu-submenu-active,
+		.ant-menu-submenu-title:hover,
+		.ant-menu-item > a:hover,
+		.ant-menu-item-selected > a,
+		.ant-menu-item-selected > a:hover {
+			border-left: 5px solid $primary-color;
+			color: $primary-color;
+			font-weight: 500;
+		}
+	}
+	.content {
+		background: $white;
+		margin: 0 39px 0 20px;
+		padding: 52px 32px 0 81px;
+		height: 712px;
+
+		.profile__title {
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 27px;
+		}
+
+		.ant-form-item {
+			margin-bottom: 20px !important;
+		}
+
+		input {
+			height: 40px;
+		}
+
+		hr {
+			border: 1px solid #dbe0e4;
+			margin: 213px -32px 0 -81px;
+		}
+
+		.ant-btn {
+			float: right;
+			padding: 10px 48px 32px 49px;
+		}
+
+		.input-caption {
+			color: $gray;
+			margin-top: 6px;
+		}
+
+		.profile__title {
+			.ant-btn {
+				margin-top: 0;
+
+				span::before {
+					content: ' ';
+					border-left: 1px solid $white;
+					position: absolute;
+					top: 0;
+					font-size: 29px;
+				}
+			}
+		}
+	}
+}
+
+.ant-modal-content {
+	.ant-form-item {
+		margin-bottom: 20px !important;
+	}
+
+	input {
+		height: 40px;
+	}
+}

@@ -31,7 +31,7 @@ class FormSignIn extends Component {
 		setCookies(CONFIG_COOKIES.FULLNAME, 'dummy');
 		setCookies(CONFIG_COOKIES.TOKEN, 'dummy');
 		this.setState({ ...this.state, loading: false });
-		this.props.history.push(MENU.DASHBOARD);
+		this.props.history.push(MENU.PROFILE);
 	};
 
 	render() {
