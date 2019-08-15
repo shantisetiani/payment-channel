@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, Button, Icon } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 class ChangePassword extends Component {
 	constructor(props) {

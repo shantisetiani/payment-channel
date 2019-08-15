@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 import Logo from '../../../../assets/logo-payment-channel@2x.png';
 import { PUBLIC_URL } from '../../../../config/url';
-import { MENU } from '@skeleton/config/menu';
 
 const { SubMenu } = Menu;
 const Sidebar = ({ collapsed, toggle, location, logout }) => {
@@ -35,7 +34,9 @@ const Sidebar = ({ collapsed, toggle, location, logout }) => {
 							</span>
 						}>
 						<Menu.Item key="1">List Client</Menu.Item>
-						<Menu.Item key="2">Transaction</Menu.Item>
+						<Menu.Item key="2">
+							<a href="/transaction">Transaction</a>
+						</Menu.Item>
 						<Menu.Item key="3">Settlement</Menu.Item>
 					</SubMenu>
 					<Menu.Item key="4">Monitoring</Menu.Item>

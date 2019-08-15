@@ -9,6 +9,7 @@ class UserManagement extends Component {
 			email: '',
 			loading: false,
 			visible: false,
+			confrimModalVisible: false,
 			confirmLoading: false,
 		};
 	}
@@ -26,7 +27,13 @@ class UserManagement extends Component {
 		setTimeout(() => {
 			this.setState({
 				visible: false,
+				// confrimModalVisible: true,
 				confirmLoading: false,
+			});
+			Modal.success({
+				title: "Credentials has been sent to User's email",
+				className: 'modal-success',
+				icon: <Icon type="check-circle" theme="filled" />,
 			});
 		}, 2000);
 	};

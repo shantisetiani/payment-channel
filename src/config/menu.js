@@ -3,5 +3,5 @@ export const MENU = {
 	LOGIN: '/login',
 	DASHBOARD: '/dashboard',
 	PROFILE: '/profile',
-	UPDATEPROFILE: '/profile/update-profile',
+	TRANSACTION: '/transaction',
 };

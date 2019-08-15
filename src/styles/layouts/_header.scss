@@ -78,4 +78,45 @@
 .app-header__account {
 	font-size: 16px;
 	font-weight: 500;
+	margin-right: 31px;
+
+	.app-header__account-img {
+		width: 40px;
+		margin-right: 11px;
+	}
+}
+
+.account-dropdown-menu {
+	padding: 20px 11px 22px 12px;
+	width: 271px;
+
+	.account-info {
+		text-align: center;
+
+		.account-img {
+			width: 62px;
+			margin-bottom: 9px;
+		}
+	}
+
+	.account-name {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.account-label {
+		font-size: 12px;
+		color: $light-gray;
+	}
+	.account-email {
+		padding: 21px 21px 24px 22px;
+	}
+	.account-menu-link {
+		padding-top: 18px;
+		padding-left: 22px;
+
+		.account-icon {
+			margin-right: 16px;
+			width: 16px;
+		}
+	}
 }

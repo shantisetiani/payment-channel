@@ -28,10 +28,7 @@
 	.ant-menu-item.active,
 	.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
 	.ant-menu-submenu-active,
-	.ant-menu-submenu-title:hover,
-	.ant-menu-item > a:hover,
-	.ant-menu-item-selected > a,
-	.ant-menu-item-selected > a:hover {
+	.ant-menu-submenu-title:hover {
 		border-left: 5px solid $primary-color;
 		color: $primary-color;
 	}
