@@ -8,7 +8,7 @@
 		"dayjs": "^1.8.15",
 		"moment": "^2.23.0",
 		"prop-types": "^15.6.2",
-		"qs": "^6.7.0",
+		"qs": "^6.7.3",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-html-parser": "^2.0.2",
